@@ -67,7 +67,7 @@ def make_data(N, num_landmarks, world_size, measurement_range, motion_noise,
         r = robot(world_size, measurement_range, motion_noise, measurement_noise)
         r.make_landmarks(num_landmarks)
         seen = [False for row in range(num_landmarks)]
-    
+
         # guess an initial motion
         orientation = random.random() * 2.0 * pi
         dx = cos(orientation) * distance
